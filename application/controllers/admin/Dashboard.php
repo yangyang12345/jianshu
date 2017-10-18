@@ -29,4 +29,9 @@ class Dashboard extends Admin_Controller{
        }
 
 //    }
+
+
+    public function test(){
+        $this->template->admin_render('admin/dashboard/test');
+    }
 }

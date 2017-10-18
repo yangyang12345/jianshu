@@ -13,12 +13,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Dashboard
+            主页
             <small>Control panel</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><i class="fa fa-dashboard"></i> 主页</li>
         </ol>
     </section>
 
@@ -126,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="box-body chat" id="chat-box">
                         <!-- chat item -->
                         <div class="item">
-                            <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+                            <img src="<?php echo base_url(); ?>/assets/img/user4-128x128.jpg" alt="user image" class="online">
 
                             <p class="message">
                                 <a href="#" class="name">
@@ -153,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!-- /.item -->
                         <!-- chat item -->
                         <div class="item">
-                            <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+                            <img src="<?php echo base_url(); ?>/assets/img/user3-128x128.jpg" alt="user image" class="offline">
 
                             <p class="message">
                                 <a href="#" class="name">
@@ -168,7 +167,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!-- /.item -->
                         <!-- chat item -->
                         <div class="item">
-                            <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+                            <img src="<?php echo base_url(); ?>/assets/img/user2-160x160.jpg" alt="user image" class="offline">
 
                             <p class="message">
                                 <a href="#" class="name">

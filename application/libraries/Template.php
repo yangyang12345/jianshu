@@ -20,10 +20,13 @@ class Template{
             return null;
         }else{
             $this->template['header'] = $this->CI->load->view('layout/header',$data,TRUE);
-            $this->template['mian_header'] = $this->CI->load->view('layout/main_header',$data,TRUE);
-            $this->template['mian_sidebar'] = $this->CI->load->view('layout/main_sidebar',$data,TRUE);
+            $this->template['main_header'] = $this->CI->load->view('layout/main_header',$data,TRUE);
+            $this->template['main_sidebar'] = $this->CI->load->view('layout/main_sidebar',$data,TRUE);
+            $this->template['content'] = $this->CI->load->view($content,$data,TRUE);
 //            $this->template['control_sidebar'] = $this->CI->load->view('layout/control_sidebar',$data,TRUE);
             $this->template['footer'] = $this->CI->load->view('layout/footer',$data,TRUE);
+
+
             return $this->CI->load->view('layout/template',$this->template);
         }
     }

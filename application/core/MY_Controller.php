@@ -23,6 +23,7 @@ class Admin_Controller extends MY_Controller{
     public function __construct()
     {
         parent::__construct();
+        $this->load->helper('menu');
 
 //        if(! $this->ion_auth->logged_in() OR ! $this->ion_auth->is_admin()){
 //            redirect('auth/login','refresh');

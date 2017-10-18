@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url(); ?>/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Alexander Pierce</p>
@@ -42,8 +42,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+            <li class="<?=active_link_controller('dashboard'); ?>"><a href="<?php echo base_url('admin/dashboard'); ?>"><i class="fa fa-dashboard"></i> <span>主页</span></a></li>
+            <li class="<?=active_link_controller('table'); ?>"><a href="<?php echo base_url('admin/table'); ?>"><i class="fa fa-table"></i> <span>用户信息</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
                     <span class="pull-right-container">
@@ -51,8 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>Link in level 2</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>Link in level 2</a></li>
                 </ul>
             </li>
         </ul>
